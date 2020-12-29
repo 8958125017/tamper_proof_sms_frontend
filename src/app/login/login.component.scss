@@ -1,0 +1,165 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body, html {
+    height: 100% !important;
+  }
+
+#login-container{
+    position: relative;
+    height: 100% !important;
+}
+
+#login-container > div{
+    width: 50%;
+    float: left;
+}
+
+
+.bg-login {
+    /* border: solid 1px #979797; */
+    background-color: #2b7fff;
+    background-image: conic-gradient(#0454b8, #1361c3 55%, #357cd5 97%, #0454b8), linear-gradient(to bottom, #d8d8d8, #d8d8d8);
+}
+
+.login-bg{
+    background-image:url("../../assets/img/login.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 0px;
+  }
+
+
+.welcome-rectangle {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.img{
+  height: 472px;
+  width: 650px;
+}
+
+
+
+.logo {
+  // width: 165px;
+  height: 90px;
+  margin-bottom:40px;
+}
+
+
+.form-container{
+    width: 388px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.filled-in{
+  width: 18px;
+ height: 18px;
+}
+
+
+.form-control {
+     border-bottom: none !important;
+     border-radius: 7px !important;
+     margin-bottom: 30px;  
+     height: 43px !important;
+     border: solid 1px rgba(0, 0, 0, 0.32) !important;
+     padding-left: 12px !important;
+     border-bottom: none !important;
+ 
+}
+
+
+.form-control::placeholder {
+  font-family: 'RobotoRegular';
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.form-bg {
+  width: 388px;
+}
+
+.rectangle {
+  position: relative;
+  height: 100% !important;
+}
+
+.mat-form-field-wrapper{
+  margin-bottom: 0px !important;
+  padding-bottom: 33px  !important;
+}
+
+.mobile-welcome-text{
+  display: none;
+}
+
+
+@media (min-width:320px) and (max-width:768px) {
+    
+  .login-bg{
+    display: none !important;
+  }
+
+  .rectangle{
+    width: 100% !important;
+    padding: 0px 10px;
+  }
+
+  .form-container{
+    width: 100% !important;
+    height: auto;
+    margin-top: 70px;
+}
+
+.mLogo{
+  display: none !important;
+}
+
+.form-bg{
+  width: 100% !important;
+}
+
+.right_bg_circle {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 120px;
+  z-index: -2;
+  opacity: 0.3;
+}
+  // .is-Mobile-login-bg{
+  //   background-image:url("../../assets/img/login.png");
+  //   height: 100%;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   position: fixed;
+  //    }
+
+     .mobile-welcome-text{
+      font-size: 32px;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 25px;
+      text-shadow: 1px 2px #763647;
+      display: block;
+     }
+    //  .copyright{
+    //   display: none;
+    //  }
+  
+}

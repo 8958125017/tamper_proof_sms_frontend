@@ -1,0 +1,53 @@
+<div id="login-container" class="is-Mobile-login-bg">
+   <div class="login-bg">
+      <div class="welcome-rectangle ">
+       <img src="assets/img/hero.png" alt="SearchTover" class="img">
+      </div>
+   </div>
+   <div class="rectangle"> 
+      <div class="form-container">
+        <div class="mobile-welcome-text">
+         <img src="assets/img/logo.png" alt="SearchTover" class="logo" >
+        </div>
+         <div class="form-bg">
+            <img src="assets/img/logo.png" alt="SearchTover" class="logo mLogo" routerLink="/home">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+               <div class="welcome-text">Log In to your Account</div>
+               <div class="login-txt">Use your ID to log in to your account.</div>
+              
+               <div class="row">
+                  <div class="col-md-12">
+                     <input type="text" value="" class="form-control logControl" placeholder="User ID" formControlName="id">
+                      <span *ngIf="loginForm.controls.id.errors?.required && isValidFormSubmitted != null && !isValidFormSubmitted" class="small text-danger"> Please enter UserId.</span>                    
+                  </div>
+                  <div class="col-md-12">
+                     <input type="password" value="" class="form-control logControl" placeholder="Password" formControlName="password">
+                     <span *ngIf="loginForm.controls.password.errors?.required && isValidFormSubmitted != null && !isValidFormSubmitted" class="small text-danger">Please enter password.</span>                 
+                  </div>
+               </div>
+
+            <div class="row copyright">
+            <div class="col-md-12" style="display: flex;">
+               <input type="checkbox" name="isexempted" id="isexempted" value="true" [(ngModel)]="isSelected" (click)="isSelect($event)" [ngModelOptions]="{standalone: true}">
+                <span class="rememberMe"><span style="color: #9ea0a5;font-size: 14px;">I accept the</span><u> Terms and Conditions.</u></span>
+            </div>
+         </div>
+          <button  type="submit" class="btn btn-primary">LOG IN</button>
+          <div class="row mt-2 mb-4 copyright">
+            <div class="col-md-7">
+             <!-- <span class="rememberMe">Don’t Have an Account? 
+              <a style="color: #1665d8;" href="javascript:void(0)" routerLink='/signup'>Sign Up</a>
+              </span> -->
+            </div>
+            <div class="col-md-5">
+               <label class="Forgot-Password float-right">
+                  <a href="JavaScript:Void(0)"  style="color: #9ea0a5; font-size: 14px;">Forgot Password?</a>
+              </label>
+            </div>
+         </div>
+            </form>
+         </div>
+      </div>
+   </div>
+  <img src="assets/img/right-bg-circle.png" class="right_bg_circle" />
+</div>

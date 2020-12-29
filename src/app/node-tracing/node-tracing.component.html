@@ -1,0 +1,74 @@
+<div class="fixeSubHeader" *ngIf="eClass=='EN'">
+  <div>
+    <div class="row mt-3">
+      <div class="col-md-3">
+        <div class="titleHead">Node Tracing</div>
+      </div>
+      <div class="col-md-9">
+        <div class="nodetracing-date">
+          <label class="cus-lable">From Date <span class="text-danger">*</span></label>
+          <input type="date" value="" class="form-control" placeholder="Date" [(ngModel)]="fromDate"
+            [ngModelOptions]="{standalone: true}" placeholder="From">
+          <label class="cus-lable">To Date <span class="text-danger">*</span></label>
+          <input type="date" value="" class="form-control" placeholder="Date" [(ngModel)]="toDate"
+            [ngModelOptions]="{standalone: true}">
+          <button class="ndsbtn" (click)="getnodeGraph()">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fixeSubHeader" *ngIf="eClass!='EN'">
+    <div class="row mt-12">
+      <div class="col-md-6" style="display: flex;">
+        <span class="titleHead">Node Tracing</span>
+        <input class="form-control custom-form-control p-2 small login_input inp-wrap enterId"
+          placeholder="Enter entity id" type="text" (input)="activeEntityId($event.target.value)" list="searchStr"
+          [(ngModel)]="idEntity" onkeypress="return event.charCode >= 48 && event.charCode <= 57" autocomplete="nope"
+          [ngModelOptions]="{standalone: true}" numbersOnly>
+        <datalist id="searchStr" style="background-color:#fff!important">
+          <option *ngFor="let list of entityData" [value]="list.peid">{{list.businessName}}({{list.peid}})</option>
+        </datalist>
+      </div>
+      <div class="col-md-6">
+        <div class="nodetracing-date">
+          <label class="cus-lable">From Date <span class="text-danger">*</span></label>
+          <input type="date" value="" class="form-control" placeholder="Date" [(ngModel)]="fromDate"
+            [ngModelOptions]="{standalone: true}" placeholder="From">
+          <label class="cus-lable">To Date <span class="text-danger">*</span></label>
+          <input type="date" value="" class="form-control" placeholder="Date" [(ngModel)]="toDate"
+            [ngModelOptions]="{standalone: true}">
+          <button class="ndsbtn" (click)="getnodeGraph()">Search</button>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+
+
+<div class="main-content isMobileMode">
+   <div class="card" *ngIf="!nodeLength">
+      <div class="no-data">
+        <h4 class="error-heading">Oops!</h4>
+        <div> No Node Tracing Data Found</div>
+      </div>
+    </div>
+
+
+    <div class="card">
+     <div class="row">
+       <div class="col-md-12">
+        <svg></svg>
+      </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+      <div class="copyright" style="float: left;">
+        All Rights Reserved. Copyright 2020
+      </div>
+    </footer>
+  
+</div>

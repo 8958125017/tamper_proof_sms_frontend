@@ -1,0 +1,95 @@
+.node circle {
+  fill: #1cf4aa;
+  stroke: #76ba1b;
+  stroke-width: 4px;
+}
+
+.node text {  
+  font-weight:bold;  
+  font-size: 17px sans-serif;  
+}
+
+.nodetext {
+  position: absolute;
+  width: 140px;
+  min-height: 68px;
+  border-radius: 4px;
+  border: solid 1px #979797;
+  background-color: #f8f8f8;
+  margin-top: -123px;
+  margin-left: 59px;
+  font-weight:bold;  
+  font-size: 17px sans-serif; 
+  text-align: center;
+  color: #040404;  
+  padding-top: 6px;   
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+.my-tooltip {
+  position: absolute;
+  top: -1px;
+  z-index: 10;
+  width: 140px;
+  min-height: 68px;
+  border-radius: 4px;
+  border: solid 1px #979797;
+  background-color: #f8f8f8;
+  margin-top: -123px;
+  margin-left: 59px;
+  font-weight:bold;  
+  font-size: 17px sans-serif; 
+  text-align: center;
+  color: #040404;  
+  padding-top: 6px;      
+}
+
+
+.btn1 {
+    position: relative;
+    padding: 6px 29px; 
+    min-width: auto;    
+    font-weight: 300;
+    line-height: 1.428571;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    letter-spacing: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0.2rem;
+    outline: 0;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: box-shadow, transform;
+}
+
+
+.form-control {
+  /* background: no-repeat center bottom, center calc(100% - 1px); */
+  /* background-size: 0 100%, 100% 100%; */
+  border: solid 1px #e8e8e8;
+  height: 28px;
+  transition: background 0s ease-out;
+  padding-left: 10px;
+  padding-right: 0;
+  border-radius: 6px !important;
+  font-size: 12px;
+  border-bottom: none;
+  color: #000;
+}
+
+.enterId{
+    width: 148px;
+    margin-left: 18px;
+}
+
+#myDiagramDiv{
+  border: none !important;
+}
+

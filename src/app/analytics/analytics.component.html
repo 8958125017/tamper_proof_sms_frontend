@@ -1,0 +1,377 @@
+<div class="fixeSubHeader">
+  <div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="titleHead">Analytics</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-content">
+  <ng-template [ngIf]="eClass=='EN'">
+  <div class="entity_analyist">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="totalWidgetbox" id="submited" style="cursor: pointer;"(click)="changeStatus('submit_sm')">
+         <p class="card-title" id="scardS">Total Submitted</p>
+          <p class="tcardnum" id="scardNS">{{submitData}}</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="totalWidgetbox" id="delivered" style="cursor: pointer;" (click)="changeStatus('DELIVRD')">
+          <p class="card-title" id="scardD">Total Delivered</p>
+          <p class="tcardnum" id="scardND">{{deleverData}}</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="totalWidgetbox" id="failed" style="cursor: pointer;" (click)="changeStatus('FAILED')">
+         <p class="card-title" id="scardF">Total Failed</p>
+          <p class="tcardnum" id="scardNF">{{failedData}}</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="totalWidgetbox" id="untrested" style="cursor: pointer;" (click)="changeStatus('UNTRUSTED')">
+         <p class="card-title" id="scardU">Total Untrusted</p>
+          <p class="tcardnum" id="scardNU">{{untrustedData}}</p>
+        </div>
+      </div>
+      </div>
+     </div>
+    </ng-template>
+
+     <ng-template [ngIf]="eClass=='TM'">
+     <div class="tm_analyist">
+      <div class="row">
+        <div class="col">
+          <div class="totalWidgetbox" id="submited" style="cursor: pointer;"(click)="changeStatus('submit_sm')">
+           <p class="card-title" id="scardS">Total Received</p>
+            <p class="tcardnum" id="scardNS">{{submitData}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="totalWidgetbox" id="submited" style="cursor: pointer;"(click)="changeStatus('submit_sm')">
+           <p class="card-title" id="scardS">Total Sent</p>
+            <p class="tcardnum" id="scardNS">{{submitData}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="totalWidgetbox" id="delivered" style="cursor: pointer;" (click)="changeStatus('DELIVRD')">
+            <p class="card-title" id="scardD">Total Delivered</p>
+            <p class="tcardnum" id="scardND">{{deleverData}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="totalWidgetbox" id="failed" style="cursor: pointer;" (click)="changeStatus('FAILED')">
+           <p class="card-title" id="scardF">Total Failed</p>
+            <p class="tcardnum" id="scardNF">{{failedData}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="totalWidgetbox" id="untrested" style="cursor: pointer;" (click)="changeStatus('UNTRUSTED')">
+           <p class="card-title" id="scardU">Total Untrusted</p>
+            <p class="tcardnum" id="scardNU">{{untrustedData}}</p>
+          </div>
+        </div>
+        </div>
+      </div> 
+     </ng-template>
+
+      <ng-template [ngIf]="eClass=='OP'">
+     <div class="tm_analyist">
+      <div class="row">
+        <div class="col">
+          <div class="totalWidgetbox" id="submited" style="cursor: pointer;"(click)="changeStatus('submit_sm')">
+           <p class="card-title" id="scardS">Total Received</p>
+            <p class="tcardnum" id="scardNS">{{receivedData}}</p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="totalWidgetbox" id="delivered" style="cursor: pointer;" (click)="changeStatus('DELIVRD')">
+            <p class="card-title" id="scardD">Total Delivered</p>
+            <p class="tcardnum" id="scardND">{{deleverData}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="totalWidgetbox" id="failed" style="cursor: pointer;" (click)="changeStatus('FAILED')">
+           <p class="card-title" id="scardF">Total Failed</p>
+            <p class="tcardnum" id="scardNF">{{failedData}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="totalWidgetbox" id="submited" style="cursor: pointer;"(click)="changeStatus('submit_sm')">
+           <p class="card-title" id="scardS">Total Pending</p>
+            <p class="tcardnum" id="scardNS">{{pendingData}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="totalWidgetbox" id="untrested" style="cursor: pointer;" (click)="changeStatus('UNTRUSTED')">
+           <p class="card-title" id="scardU">Total Untrusted</p>
+            <p class="tcardnum" id="scardNU">{{untrustedData}}</p>
+          </div>
+        </div>
+        </div>
+      </div> 
+     </ng-template>
+     
+      <div class="card" style="min-height: 264px; margin-top: 16px !important;">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="titleHead" style="font-size: 17px;">SMS Count</div>
+        </div>    
+       <div class="col-md-4">
+       <select class="mat-raised-button" id="mySelect" [(ngModel)]="dayCount" (change)="selectDays(dayCount)"  name='dayCount' style="float: right;">
+           <option value="">Select by</option>
+           <option value="7">Weekly</option>
+           <option value="30">Monthly</option>
+           <option value="year">Yearly</option>                     
+       </select>
+   </div>
+
+      </div>
+        <div>
+          <div class="chart-container">
+             <canvas id="canvas" style="width: 1300px !important;height: 485px !important"></canvas>
+           </div>
+        </div>
+    </div>
+
+    <div style="padding: 3px; margin-top: 30px;">
+      <div class="row">
+        <div class="col-md-3">
+          
+          <!-- TM Connected start here -->
+
+          <div class="tmConnected" *ngIf="eClass=='EN'">
+            <p style="margin: 0px;">
+               <i class="material-icons ticon">business_center</i>
+               &nbsp;
+               TM Connected
+            </p>
+            <table class="table table-bordered">
+              <tr >
+                 <td class="w-50" style="height:30px; color:#fff; background:#0ac7ec;">
+                  TM Name
+                  </td>
+                 <td style="height:30px; color:#fff; background:#0ac7ec;">Count</td>
+              </tr>
+              <tr *ngFor="let item of tmConnectedData ; let i = index">
+                <td class="w-50">
+                  <div class="tmText">{{item.businessName?item.businessName:'NA'}}</div>
+                  {{item.peid?item.peid:'NA'}}
+                 </td>
+                <td>{{item.count?item.count:'NA'}}</td>
+             </tr>
+            </table>
+            <div class="no-data" *ngIf="tmDataLength">
+               <h4 class="error-heading">Oops!</h4>
+               <div> No Data Found</div>
+             </div>
+           </div>
+         
+
+            <!-- Entity Connected start here -->
+
+           <div class="tmConnected" *ngIf="eClass=='TM'">
+            <p style="margin: 0px;">
+               <i class="material-icons ticon">business_center</i>
+               &nbsp;
+               Entity Connected
+            </p>
+            <table class="table table-bordered">
+              <tr >
+                 <td class="w-50" style="height:30px; color:#fff; background:#0ac7ec;">
+                  Entity Name
+                  </td>
+                 <td style="height:30px; color:#fff; background:#0ac7ec;">Count</td>
+              </tr>
+              <tr *ngFor="let item of tmConnectedData ; let i = index">
+                <td class="w-50">
+                  <div class="tmText">{{item.businessName?item.businessName:'NA'}}</div>
+                  {{item.peid?item.peid:'NA'}}
+                 </td>
+                <td>{{item.count?item.count:'NA'}}</td>
+             </tr>
+            </table>
+            <div class="no-data" *ngIf="tmDataLength">
+               <h4 class="error-heading">Oops!</h4>
+               <div> No Data Found</div>
+             </div>
+           </div>
+        </div>
+        <div class="col-md-6"> 
+          <div class="approveRoute">
+            <p style="margin: 0px;">
+               <i class="material-icons ticon ricon">business_center</i>
+               &nbsp;
+               APPROVED ROUTE
+            </p>
+            <table class="table table-bordered">
+              <tr>
+                 <td class="w-50" style="height:30px; color:#fff; background:#1bb5b2;">
+                  Route Id
+                  </td>
+                 <td style="height:30px; color:#fff; background:#1bb5b2;">Track Name</td>
+              </tr>
+              <tr>
+                <td class="w-50">
+                    1020202029101
+                 </td>
+                <td>
+                  <i class="material-icons mr-2" style="cursor: pointer;" style="cursor: pointer">location_on</i>
+                </td>
+             </tr>
+             
+          </table>
+           </div>
+           <div class="tmConnected senderUsage">
+            <p style="margin: 0px;" class="table-bordered">
+               <i class="material-icons ticon sicon">double_arrow</i>
+               &nbsp;
+               SENDER USAGE
+              <!--  <select class="sselectMonth">
+                <option value="">Jan</option>
+                <option value="7">Fab</option>
+                <option value="30">Mar</option>                     
+            </select> -->
+            <input type="date" style="width:140px;height:28px;" class="form-control sselectMonth" placeholder="Date" [(ngModel)]="date" [ngModelOptions]="{standalone: true}" (change)="selectByDate(date)">
+            </p>
+            <table class="table table-bordered">
+              <tr>
+                 <td class="w-50" style="height:30px; color:#fff; background:#9d9d9d;">
+                 Sender ID
+                  </td>
+                 <td style="height:30px; color:#fff; background:#9d9d9d;">Usage</td>
+              </tr>
+              <tr *ngFor="let item of getAllHeadersData ; let i = index">
+                <td class="w-50">
+                    {{item.aparty?item.aparty:'NA'}}
+                 </td>
+                <td>
+                {{item.total?item.total:'NA'}} 
+                 </td>
+             </tr>
+          </table>
+           <div class="no-data" *ngIf="headerDataLength">
+               <h4 class="error-heading">Oops!</h4>
+               <div> No Data Found</div>
+             </div>
+          </div>
+           <p class="view" *ngIf="!headerDataLength">
+            <a (click)="showAllHeader()" style="cursor: pointer">View All</a> 
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div class="tmConnected messageCategory">
+            <p style="margin: 0px;">
+               <i class="material-icons ticon micon">mail_outline</i>
+               &nbsp;
+              Message Category
+              
+              <select class="mselectMonth">
+                <option value="">Jan</option>
+                <option value="7">Fab</option>
+                <option value="30">Mar</option>                     
+            </select>
+            </p>
+            <table class="table table-bordered">
+              <tr>
+                 <td class="w-50" style="height:30px; color:#fff; background:#1ee0a5;">
+                 Category
+                  </td>
+                 <td style="height:30px; color:#fff; background:#1ee0a5;">Count</td>
+              </tr>
+              <tr>
+                <td class="w-50">
+                  <div class="tmText">OTP</div>
+                 </td>
+                <td>30000000</td>
+             </tr>
+             <tr>
+              <td class="w-50">
+                <div class="tmText">Transational</div>
+               </td>
+              <td>30000000</td>
+           </tr>
+           <tr>
+            <td class="w-50">
+              <div class="tmText">Service</div>
+             </td>
+            <td>30000000</td>
+         </tr>
+         <tr>
+          <td class="w-50">
+            <div class="tmText">Promotional</div>
+           </td>
+          <td>30000000</td>
+       </tr>
+            </table>
+           </div>
+        </div>
+      </div>
+   </div>
+    <footer class="footer">
+      <div class="copyright" style="float: left;">
+        All Rights Reserved. Copyright 2020
+      </div>
+    </footer>
+
+  
+</div>
+
+
+
+<div class="modal fade" id="sharedModal" data-backdrop="static" tabindex="-1" role="dialog"
+  aria-labelledby="emailModalCenterTitle" aria-hidden="true" style="padding-left: 0px; left:-49px;">
+  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <i class="material-icons mr-2 popupCross" data-dismiss="modal" style="cursor: pointer" (click)="close()">close</i>
+    <div class="modal-body">
+        <div class="container-fluid">          
+         
+          <div class="row">
+            <div class="col-md-12">
+              <span style="color:#01aec8;font-size:17px;font-weight: 700;">SENDER USAGE</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+              <table class="table table-bordered tracktable">
+                <tr>
+                  <th>
+                    S.No.
+                  </th>
+                  <th>
+                    Sender ID
+                  </th>
+                  <th>
+                    Usage
+                  </th>
+                  
+               </tr>
+                  
+                  <tr *ngFor="let item of getAllHeadersData ; let i = index">
+                   <td>
+                      {{i+1}}
+                    </td>
+                    <td>
+                        {{item.aparty?item.aparty:'-'}}
+                    </td>
+                    <td>
+                        {{item.total?item.total:'-'}}
+                    </td>
+                    
+                  </tr>
+              </table>
+            </div>
+            </div>
+          </div>
+               
+        </div>     
+      </div>
+    </div>
+  </div>
+</div>
+

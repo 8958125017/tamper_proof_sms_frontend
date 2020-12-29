@@ -1,0 +1,123 @@
+
+.node circle {
+  fill: #1cf4aa;
+  stroke: #76ba1b;
+  stroke-width: 4px;
+}
+
+.node text {
+  font-size: 12px sans-serif;
+   font-weight:bold
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+
+.my-tooltip {
+  position: absolute;
+  top: -1px;
+  z-index: 9999;
+  width: 140px;
+  min-height: 68px;
+  border-radius: 4px;
+  border: solid 1px #979797;
+  background-color: #f8f8f8;
+  margin-top: -123px;
+  margin-left: 59px;
+  font-weight:bold;  
+  font-size: 17px sans-serif; 
+  text-align: center;
+  color: #040404;  
+  padding-top: 6px;      
+}
+
+.form-control {
+    /* background: no-repeat center bottom, center calc(100% - 1px); */
+    /* background-size: 0 100%, 100% 100%; */
+    border: solid 1px #e8e8e8;
+    height: 36px;
+    transition: background 0s ease-out;
+    padding-left: 10px;
+    padding-right: 0;
+    border-radius: 6px !important;
+    font-size: 12px;
+    border-bottom: none;
+    color: #000;
+}
+
+.search-icons{
+    position: absolute;
+    top: 9px;
+    right: 2px;
+    color: #545353;
+    font-size: 19px;
+}
+
+
+.trackBtn{
+    background:#1f8e8a !important;
+    margin: 0px;
+}
+
+
+
+table { 
+    border-collapse: collapse;
+    width: 100%; 
+    background: #fff;
+  } 
+  
+  td { 
+    text-align: center;
+    padding: 1px;
+    border-bottom: 1px solid #fafafa;
+    border-top: 1px solid #fafafa;
+    height: 35px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: 0.3px;
+    color: #617087 !important;
+  } 
+  
+  .geeks { 
+    
+    border-left: 1px solid #fafafa;
+    border-top-left-radius:4px;
+    border-bottom-left-radius: 4px;
+  } 
+  
+  .geeksr { 
+   
+    border-right: 1px solid #fafafa;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  } 
+  
+  
+  .gfg { 
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+  } 
+
+.refbtn{
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    font-family: "Montserrat";
+    font-size: 8px;
+}
+
+.myDiagramDiv {
+  background: whitesmoke;
+  width: 1024;
+  height: 500px;
+  border: 1px solid black;
+}

@@ -1,0 +1,84 @@
+<div id="login-container" class="is-Mobile-login-bg">
+   <div class="login-bg">
+      <div class="welcome-rectangle ">
+       <img src="../../assets/img/hero.png" alt="SearchTover" class="img">
+      </div>
+   </div>
+   <div class="rectangle"> 
+      <div class="form-container">
+         <div class="mobile-welcome-text">
+            <img src="../../assets/img/logo.png" alt="SearchTover" class="logo">
+           </div>
+         <div class="form-bg">
+            <img src="../../assets/img/logo.png" alt="SearchTover" class="logo mLogo">
+            <form [formGroup]="signUpForm" (ngSubmit)="signup()">
+               <div class="welcome-text">Create New Account</div>
+               <div class="login-txt">Use your email to create new account.</div>
+               <div class="row mt-3">
+                  <div class="col-md-12">
+                     <input type="text" value="" class="form-control" placeholder="DLI ID">
+                  </div>
+                  <div class="col-md-12">
+                     <input type="text" value="" class="form-control" placeholder="Bank Name">
+                  </div>
+                  <div class="col-md-12">
+                     <input type="text" value="" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col-md-12">
+                     <input type="text" value="" class="form-control" placeholder="Mobile No">
+                  </div>
+                  <div class="col-md-12">
+                     <input type="text" value="" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="col-md-12">
+                     <input type="password" value="" class="form-control" placeholder="Confirm Password">
+                  </div>
+               </div>
+            <div class="row mt-2 mb-4 copyright">
+            <div class="col-md-12">
+               <input type="checkbox" class="filled-in" />
+                <span class="rememberMe">I have read the Terms and Conditions.</span>
+            </div>
+           
+         </div>
+          <button  type="submit" class="btn btn-primary">SIGN UP NOW</button>
+          <!-- <button  type="submit" class="btn btn-danger btn-outline-primary" routerLink="/signup">Sign up</button> -->
+          <div class="row mt-2 mb-4 copyright">
+            <div class="col-md-7">
+               <span class="rememberMe">
+                   Have an Account? 
+                     <a style="color: #1665d8;" href="javascript:void(0)" routerLink='/login'>Sign In </a>
+                  </span>
+            </div>
+            <div class="col-md-5">
+               <label class="Forgot-Password float-right">
+                  <a href="JavaScript:Void(0)"  style="color: #1665d8;">Forgot Password?</a>
+              </label>
+            </div>
+         </div>
+            </form>
+         </div>
+         <!-- <div class="row mt-4 copyright">
+            <div class="col-md-7">
+               <div class="">© 2020 Blockcube Technology Limited.</div>
+            </div>
+            <div class="col-md-5">
+               <div class="row"> 
+                  <div class="col-md-4">
+                     Terms
+                  </div>
+                  <div class="col-md-4">
+                     Privacy
+                  </div>
+                  <div class="col-md-4">
+                     <span class="dot"></span>
+                     <span class="dot"></span>
+                     <span class="dot"></span>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+      </div>
+   </div>
+  <img src="../../assets/img/right-bg-circle.png" class="right_bg_circle" />
+</div>

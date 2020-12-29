@@ -1,0 +1,480 @@
+<style>
+   .downloadBtn {
+      font-family: 'Montserrat';
+      /* width: 64px; */
+      border-radius: 12px;
+      background-color: #1cf4aa;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.43;
+      letter-spacing: normal;
+      text-align: justify;
+      color: #444444;
+      border: none;
+   }
+</style>
+
+<div class="fixeSubHeader">
+   <div>
+      <div class="row">
+         <div class="col-md-12">
+            <div class="titleHead">Downloads</div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="main-content">
+   <div>
+      <div class="">
+         <!-- <div class="apiSetBox">
+            <div class="row">
+               <div class="col-md-7">
+                  <label> TO SET UP API KEY </label>
+               </div>
+               <div class="col-md-3 offset-md-2">
+                  <button class="btn trackBtn" (click)="generateSecretKey()">CLICK HERE TO GENERATE API KEY </button>
+               </div>
+            </div>
+         </div> -->
+
+
+         <!-- <div class="row">
+            <div class="col-md-12">
+               <div class="titleHead" style="font-size: 17px;">GENERAL USAGE</div>
+            </div>
+         </div> -->
+
+         <!-- <div class=" ">
+            <div class="row">
+               <div class="col-md-1">
+                 <img src="assets/img/B1.png">
+               </div>
+               <div class="col-md-11">
+                  <label>Getting Started</label>
+                 
+                </div>
+            </div>
+         </div> -->
+         <!-- <div class="viewapiSetBox api">
+            <div class="row">
+               <div class="col-md-1">
+                 <img src="assets/img/B2.png">
+               </div>
+               <div class="col-md-11">
+                  <label>API REFERNCES</label>
+                  <P class="bookSection">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </P>
+                </div>
+            </div>
+         </div>
+         <div class="viewapiSetBox guide">
+            <div class="row">
+               <div class="col-md-1">
+                 <img src="assets/img/B3.png">
+               </div>
+               <div class="col-md-11">
+                  <label>USAGE GUIDES</label>
+                  <P class="bookSection">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </P>
+                </div>
+            </div>
+         </div>
+         <div class="viewapiSetBox tutorial">
+            <div class="row">
+               <div class="col-md-1">
+                 <img src="assets/img/B4.png">
+               </div>
+               <div class="col-md-11">
+                  <label>TUTORIALS</label>
+                  <P class="bookSection">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </P>
+                </div>
+            </div>
+         </div> -->
+         <div class="card">
+
+            <div id="accordion">
+               <div style="padding: 5px 5px;background: #fbfbfb;">
+                  <div class="row">
+                     <div class="col-md-3">
+                        <div class="card-body" style="padding:4px 4px !important;
+                     height: 100%; background: #fff;">
+                           <div class="collapsed w-100 dheading" data-toggle="collapse" data-target="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne" (click)="sidebarInfo('whytraceTxt')">
+                              <img src="assets/img/startedIcon.png">
+                              <label style="cursor:pointer">Getting Started</label>
+                           </div>
+                           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                              data-parent="#accordion">
+                              <ul class="dlist">
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('whytraceTxt')">
+                                       - Why TraceTxt?
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('gettrace')">
+                                       - How to get Tracetxt? 
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="collapsed w-100 dheading" data-toggle="collapse" data-target="#collapseTwo"
+                              aria-expanded="true" aria-controls="collapseOne" (click)="sidebarInfo('centos')">
+                              <img src="assets/img/configIcon.png">
+                              <label style="cursor:pointer">Executable Binary & Config file</label>
+                           </div>
+                           <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                              <ul class="dlist">
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('centos')">
+                                       - CentOS
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('ubuntu')">
+                                       - Ubuntu
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('linux')">
+                                       - Red Hat Enterprise Linux
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)">
+                                       - Windows
+                                    </a>
+                                    <span class="commingsoon">Coming Soon</span>
+                                 </li>
+                              </ul>
+                           </div>
+
+                           <div class="collapsed w-100 dheading" data-toggle="collapse" data-target="#collapseThree"
+                              aria-expanded="true" aria-controls="collapseOne" (click)="sidebarInfo('requisites')">
+                              <img src="assets/img/userIcon.png">
+                              <label style="cursor:pointer">USER GUIDES</label>
+                           </div>
+                           <div id="collapseThree" class="collapse" aria-labelledby="headingOne"
+                              data-parent="#accordion">
+                              <ul class="dlist">
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('requisites')">
+                                       - Pre-Requisites
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('isntallation')">
+                                       - Deployment & Installation
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('services')">
+                                       - For running as a service
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a tabindex="1" href="javascript:void(0)" (click)="sidebarInfo('settingconfig')">
+                                       - Setting up Config file
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-9">
+                      <div class="card-body bookSection" id="whytraceTxt">
+                         <p class="fontB"> <strong>Why TraceTxt? </strong></p>
+                         <div class="row">
+                           <div class="col-md-9">
+                                The message generated from External Short Messaging Entity (ESME) or a
+                                 mobile phone is in plain text which can be easily read and modified before it
+                                 reaches SMSC. Any wrong information received by the recipient maycause loss
+                                 to the recipient or reduce trust.
+                             </div>
+                              <div class="col-md-3">
+                               <img src="assets/img/bitmap.png" class="img-fluid" />
+                              </div>
+                           </div>
+
+                           <p>To exploit the popularity of SMS in authentication & banking, it is necessary to provide
+                              the proper security to SMS so that it could reach to the
+                              receiver’s mobile safely to provide data confidentiality, integrity,
+                              authentication, and non-repudiation. However, such requirements are not
+                              provided by the traditional SMS messaging providers.
+                           </p>
+
+                           <p>It is very necessary tosecure the SMS by encryption, cypher & blockchain techniques and
+                              prevent itfrom the various attacks applied on SMS like man-in-middle attack, replay
+                              attack, non-repudiation etc so that it could provide the data security like
+                              confidentiality, authentication, integrity and non-repudiation.
+
+                           </p>
+
+                        </div>
+
+                        <div class="card-body bookSection" id="gettrace">
+                           <p class="fontB"><strong>How to get TraceTxt?</strong></p>
+
+                           <ol>
+                              <li>
+                                 <a href="javascript:void(0)">
+                                    Contact </a> our team for more information and installing the application
+
+                              </li>
+
+                              <li> Post onboarding a Unique ID & passkey will be generated.</li>
+
+                              <li>
+                                 Download <a href="javascript:void(0)">Executable Binary</a>
+                              </li>
+                              <li>
+                                 Follow <a href="javascript:void(0)">User Guide</a> to Implement & Run.
+                              </li>
+
+                              <li>
+                                 Get set go.
+                              </li>
+
+                           </ol>
+                        </div>
+
+                        <div class="card-body bookSection" id="centos">
+                           <p>
+                              <span class="fontB">Cent Operating System</span>
+                           </p>
+                           <p>
+                              <img src="assets/img/cent.png" class="img-fluid" /><br><br>
+                              Cent OS release 6.7 (Final) or above.
+                           </p>
+                           <button class="downloadBtn">Download Now</button>
+
+                        </div>
+
+                        <div class="card-body bookSection" id="Ubuntu">
+                           <p>
+                              <span class="fontB">Ubuntu</span>
+                           </p>
+
+                           <p>
+                              <img src="assets/img/ubuntu.png" class="img-fluid" /><br><br>
+                              Ubuntu version 14.04.6 LTS or above.
+                           </p>
+                           <button class="downloadBtn">Download Now</button>
+                        </div>
+
+                        <div class="card-body bookSection" id="Linux">
+                           <p>
+                              <span class="fontB">Red Hat Enterprise Linux</span>
+                           </p>
+
+                           <p>
+                              <img src="assets/img/red-h-at.png" class="img-fluid" /><br><br>
+                              Red Hat Enterprise Linux Server release 6.10 (Santiago) or above.
+                           </p>
+                           <button class="downloadBtn">Download Now</button>
+                        </div>
+
+                        <div class="card-body bookSection" id="Windows">
+                           <p><span class="fontB">Windows System:</span>Coming Soon</p>
+                           <p><span class="b">Note:-</span> Contact us incase your OS/Version is not listed above
+                           </p>
+                        </div>
+
+                        <div class="card-body bookSection" id="requisites">
+                           <p class="fontB">
+                              <u>Pre-requisites</u>
+                           </p>
+
+                           <ul>
+                              <li>
+                                 Connectivity of System Node with Blockcube's Server IP & Ports (Blockcube's Central
+                                 Server - For Database, Heartbeat & UI).
+
+                                 <ul style="line-height: 32px;">
+                                    <li>
+                                       <strong>Below are the List of packages/dependencies used by executable.</strong>
+                                       <p>(<span class="b">Note:-</span> Good to have, although already added with
+                                          the executable binary)<br>
+
+                                          python-nfqueue <br>
+                                          default-libmysqlclient-dev <br>
+                                          cffi==1.14.0<br>
+                                          enum==0.4.7<br>
+                                          pycparser==2.20<br>
+                                          scapy==2.4.3<br>
+                                          six==1.14.0<br>
+                                          simplemysql==1.25<br>
+                                          smpp.pdu==0.3<br>
+                                       </p>
+                                    </li>
+                                 </ul>
+
+                              </li>
+
+
+                           </ul>
+                        </div>
+                        <div class="card-body bookSection" id="installation">
+                           <p class="fontB"><strong>Deployment & Installation Process:-</strong></p>
+
+                           <ul>
+                              <li>
+                                 Untar the shared package containing executable binary & config file. <br>
+                                 #tar -zxvf <a href="javascript:void(0)">TP_SMS.tgz</a>
+
+                              </li>
+
+                              <li>
+                                 Edit the config file as depicted in below section.
+
+                              </li>
+
+                              <li>
+                                 Run the executable binary with root privileges.<br>
+                                 # nohup ./TP_SMS -c config_path&
+
+
+                                 <p><span class="b">(Note:-) </span><br>
+                                    • This will run 4 threads to TP_SMS, do not run process multiple times <br>
+                                    • config_path = Absolute path at which config.ini is place eg. If config.ini is
+                                    placed in /home then command will be nohup ./TP_SMS -c /home/config.ini &)
+                                 </p>
+                              </li>
+                              <li>Checking whether process started or not.<br>
+                                 #ps -ef|grep TP_SMS
+
+                              </li>
+                              <li>For Shutting down the executable binary.<br>
+                                 #pkill -2 TP_SMS
+
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="card-body bookSection" id="services">
+                           <p class="fontB"> <strong>For running as a Service:-</strong></p>
+                           <ul>
+                              <li>
+                                 Download the shared script for converting executable binary to System Service.
+                              </li>
+
+
+                              <li>
+                                 Run the script as below with root privileges: <br>
+                                 #sh <a href="javascript:void(0)">install_TP.sh</a> executable_binary_path -c
+                                 config_path
+
+                                 <p><strong>(Note:-)</strong><br>
+                                    • For example if binary is placed at /home directory then
+                                    executable_binary_path=/home/TP_SMS<br>
+                                    • config_path = Absolute path at which config.ini is place eg. If config.ini is
+                                    placed in /home then command will be nohup ./TP_SMS -c /home/config.ini &)
+                                 </p>
+                              </li>
+
+                              <li>
+                                 <strong>Starting, checking status & stopping the service:-</strong>
+                                 <p>
+                                    #service tamper-proof start<br>
+
+                                    #service tamper-proof status<br>
+
+                                    #service tamper-proof stop<br>
+                                 </p>
+                              </li>
+
+                              <li>
+                                 For unistalling as service
+                                 <p>#sh <a href="javascript:void(0)">unistall_TP.sh </a></p>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="card-body bookSection" id="config">
+                           <p class="fontB">Setting up config file</p>
+
+                           <p>Need to change & configure below highlighted IP Address & Port:-
+
+                           </p>
+                           <p>#tcp addresses of local machine on which data is received <br>
+                              incoming_conn = <span class="b"><u>0.0.0.0:6666</u></span> ------------ Local Node IP
+                              address along with local Incoming<br>
+                              SMPP/HTTP Port (For MutlipleIP:Ports list comma separated For eg.
+                              IP1:port1,IP2:port2,IP3:port3)<br>
+
+                           </p>
+                           <p>#tcp addresses of remote machine to which data is sent
+                              outgoing_conn = <span class="b"><u>0.0.0.0:6666</u></span> ------------ Remote Node IP
+                              address along with port(If port is unknown then enter port as 0 for eg. IP:0),
+                              (For MutlipleIP:Ports list comma separated For eg.<br>
+                              IP1:port1,IP2:port2,IP3:port3)
+
+                           </p>
+                           <p>
+                              [NODE_INFO]<br>
+                              dltid = XYZ<br>
+                              self_ip = <span class="b"><u>0.0.0.0 </u></span>---------- Self IP Address<br>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="copyright" style="float: left;">
+         All Rights Reserved. Copyright 2020
+      </div>
+   </footer>
+</div>
+
+<div class="modal fade" id="apiModal" data-backdrop="static" tabindex="-1" role="dialog"
+   aria-labelledby="emailModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-body">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row  mt-2">
+                     <div class="col-md-12" *ngIf="showKey">
+                        <label>Enter Password</label>
+                        <div class="input-group no-border">
+                           <input type="text" value="" class="form-control" [(ngModel)]="password"
+                              placeholder="Type in Password">
+                        </div>
+                        <br>
+                        <button type="button" name="button" class="btn btn-primary viewBtn"
+                           (click)="getKey()">Submit</button>
+
+                     </div>
+
+
+                     <div class="col-md-12" *ngIf="!showKey">
+                        <p class="small" style="font-weight: 600;font-size:14px;line-height:24px">
+                           <b> Secret key:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                           {{viewData.seckey?viewData.seckey:'NA'}}<br>
+                           <b> Encrypted Key:</b> {{viewData.encrypted?viewData.encrypted:'NA'}}
+                        </p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12 text-center mt-2">
+                        <button type="button" name="button" class="btn bgbtn mat-raised-button"
+                           data-dismiss="modal">close</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

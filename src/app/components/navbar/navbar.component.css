@@ -1,0 +1,40 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.vitaversion{
+    width: 61px;
+    height: 12px;
+    position: absolute;
+    right: 60px;
+    top: 18px;
+    font-family: "Montserrat";
+    font-size: 6px;
+    font-weight: bold;
+    color: #272626;
+    background-color: #fff911;
+    text-align: center;
+    line-height: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+
+  @media (max-width: 765px) {
+    .isMobileNabVar {
+      display: none;
+    }
+
+    .main-panel .main-content {
+      padding-top: 27px !important;
+      padding:0px !important;
+  }
+  
+  }
+
+  .navbar-toggler{
+    position: absolute;
+    top: 10px;
+    right: 4px;
+  }

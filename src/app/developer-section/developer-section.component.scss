@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.apiSetBox {
+    width: auto;
+    height:70px;
+    border-radius: 4px;
+    border: solid 1px #e1e1e1; 
+    background-color: #fff;
+    margin-top: 31px;
+    padding: 6px;
+    margin-bottom: 37px;
+    line-height: 62px;
+}
+
+.trackBtn{
+    background:#1f8e8a !important;
+    margin: 0px;
+}
+
+.viewBtn{
+    background:#01aec8 !important;
+    margin: 0px;
+}
+
+.card-body{
+    font-size: 14px;
+    padding: 16px 21px !important;
+    // color: #617087 !important;
+    // font-family: 'Montserrat';
+    text-align: justify;
+}
+
+
+.viewwidgetBox{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border-top: 0px;
+}
+
+
+.viewapiSetBox {
+    width: auto;
+    min-height: 100px;
+    border-radius: 4px;
+    border: solid 1px #e1e1e1;
+    background-color: #fff;
+    padding: 6px;
+    padding-top: 8px;
+    border-right: none;
+}
+
+
+.fontB{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: bold;
+    color: #23bf89;
+}
+
+.b{
+    font-weight: bold;
+}
+
+.commingsoon{
+    background: red;
+    font-size: 11px;
+    color: #fff;
+    font-weight: bold;
+}
+.highlight{
+   color:red;
+}
+
+.viewapiSetBox:last-child{
+   
+    margin-bottom:0px !important;
+    
+    
+}
+
+.get{
+    border-left: 4px solid #93ff93;
+}
+
+.api{
+    border-left: 4px solid  #7adbff;
+}
+
+.guide{
+    border-left: 4px solid  #e7beff;
+}
+
+.tutorial{
+    border-left: 4px solid  #ff93d2;
+}
+
+.viewapiSetBox label{
+    color: #617087 !important;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: normal;
+   
+}
+
+.apiSetBox label{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: bold;
+    color: #919191;
+}
+
+.bookSection{ 
+    font-family: "Montserrat";
+    font-size: 12px;
+    line-height: 24px;
+    color: #6f6f6f;
+    background: #fff;
+    display: none;
+    min-height: 100%;
+}
+
+
+.showbookSection{
+   display: block;
+}
+
+.dheading{
+    height: 40px;
+    border-radius: 4px;
+    background-color: #23bf89;
+    cursor: pointer;
+    line-height: 40px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.dheading label{
+    color: #fff !important;
+    font-family: 'Montserrat';
+    font-size: 9px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+ 
+  }
+
+  .dheading img{
+    margin-right: 8px;
+   }
+
+   .dlist{
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+
+   .dlist li{
+   line-height: 30px;
+  
+   }
+
+   .dlist li a{
+   font-family: 'Montserrat';
+   font-size: 14px;
+   color: #617087;
+    }
+
+    
+    .dlist li a[tabindex]:focus{
+        color:#23bf89 !important;
+        outline: none;
+         }
+
+
+
+

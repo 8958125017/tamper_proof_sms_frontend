@@ -1,0 +1,70 @@
+<div class="fixeSubHeader">
+  <div class="">
+      <div class="row">
+                 <div class="col-md-12">
+                    <div class="titleHead">Profile</div>
+                 </div>
+              </div>
+        </div>
+</div>
+<div class="main-content">
+  <!-- <form (ngSubmit)="editProfile()"> -->
+<form style="margin-top: 20px;">
+  <div>
+    <div class="row">
+      <div class="col-md-6 order-status">
+        <label>PE ID</label>
+        <div class="input-group no-border">
+           <input type="text" value="" class="form-control" [(ngModel)]="enterpriseData.peid" [ngModelOptions]="{standalone: true}" placeholder="DLT ID">
+        </div>
+     </div>
+     <div class="col-md-6 order-status">
+      <label>Business Name</label>
+      <div class="input-group no-border">
+         <input type="text" value="" class="form-control" [(ngModel)]="enterpriseData.businessName" [ngModelOptions]="{standalone: true}" placeholder="Bank Name">
+      </div>
+      </div>
+      </div>
+      <div class="row">        
+        <div class="col-md-6 order-status">
+          <label>EmailId</label>
+          <div class="input-group no-border">
+             <input type="text" value="" class="form-control" [(ngModel)]="enterpriseData.email" [ngModelOptions]="{standalone: true}" placeholder="Email Id">
+          </div>
+       </div>
+       <div class="col-md-6 order-status">
+        <label>Text Registratin Number</label>
+        <div class="input-group no-border">
+           <input type="text" value="" class="form-control"[(ngModel)]="enterpriseData.tax_reg_no"  [ngModelOptions]="{standalone: true}"placeholder="DLT Registratin Number">
+        </div>
+     </div>
+   </div>
+   <div class="row order-status">
+    <div class="col-md-5">
+
+   </div>
+   <div class="col-md-2">
+    <div class="input-group no-border">
+       <button class="btn btn-primary viewBtn">Update</button>
+    </div>
+ </div>
+</div>
+</div>
+</form>
+<div class="row order-status">
+   <footer class="footer">
+     <div class="container-fluid">
+       <div class="copyright" style="float: left;">
+              All Rights Reserved. Copyright 2020
+          </div>
+      </div>
+  </footer>
+ </div>
+</div>
+<br>
+
+
+
+
+
+

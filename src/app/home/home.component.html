@@ -1,0 +1,408 @@
+   
+   <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+   
+   <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <div class="vitaversion">Beta Version</div>
+                        <a [ngxScrollTo]="'#welcome'" class="logo" style="cursor:pointer">
+                          <img src="assets/img/logo.png">
+                        </a>
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a [ngxScrollTo]="'#welcome'" style="cursor: pointer;" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a [ngxScrollTo]="'#about'" style="cursor: pointer;">Product</a></li>
+                            <li class="scroll-to-section"><a [ngxScrollTo]="'#about2'" style="cursor: pointer;">Features</a></li>
+                            <li class="scroll-to-section"><a [ngxScrollTo]="'#services'" style="cursor: pointer;">Analytics</a></li>
+                            <li class="scroll-to-section"><a [ngxScrollTo]="'#about3'" style="cursor: pointer;">Support</a></li>
+                            <li class="scroll-to-section"><a  [ngxScrollTo]="'#about4'" style="cursor: pointer;">Verticals</a></li>
+                            <li class="scroll-to-section"><a [ngxScrollTo]="'#contact-us'" style="cursor: pointer;">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger' (click)="menuClick()">
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="welcome-area" id="welcome">
+     <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>APPLICATION FOR</h1>
+                        <p>SECURE SMS</p>
+                        <a class="main-button-slider" (click)="login()" style="cursor: pointer">Log in Now</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/img/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+
+                    <div class="left-heading">
+                        <h5>
+                            ABOUT THE
+                        </h5>
+                        <p>PRODUCT</p>
+                    </div>
+                    <div class="left-text">
+                        <p>
+                            Tamper Proof SMS Application ensures SMS is completely secured and encrypted to avoid any
+                            tampering in its journey from enterprise to telecom operator and finally to the intended
+                            recipient.
+                        </p>
+                        <p>
+                            The application uses advance technology like Blockchain/DLT, asymmetric encryption, cypher
+                            technology & digital & biometric signature so that SMS can be delivered without tampering by
+                            anyone.
+                        </p>
+
+                        <a href="#about2" class="main-button">DOWNLOAD BROCHURE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="about2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="left-heading">
+                        <h5>
+                            PRODUCT
+                        </h5>
+                        <p>FEATURES</p>
+                    </div>
+                </div>
+                <div class="left-text col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <ul style="margin-left: 20px;">
+                        <li>
+                            <img src="assets/img/about-icon-01.png" alt=""
+                                style="height: 16px; margin-top: 17px;">
+                            <div class="text">
+                                <h6>Encryption</h6>
+                                <p>Two layer Encryption of SMS makes
+                                    tampering almost impossible.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/about-icon-01.png" alt=""
+                                style="height: 16px; margin-top: 17px;">
+                            <div class="text">
+                                <h6>TRACEABILITY</h6>
+                                <p>Application provides complete traceability
+                                    of SMS journey.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/about-icon-01.png" alt=""
+                                style="height: 16px; margin-top: 17px;">
+                            <div class="text">
+                                <h6>CONTENT SECURiTY</h6>
+                                <p>Only relevant details will be decoded at nodes
+                                    (content will remain encrypted).</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-image col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <ul style="margin-left: 20px;">
+                        <li>
+                            <img src="assets/img/about-icon-01.png" alt=""
+                                style="height: 16px; margin-top: 17px;">
+                            <div class="text">
+                                <h6>TAMPER ALERT</h6>
+                                <p>If Tamper attempt is made, alarm/alert will
+                                    be generated. Enterprise sending SMS can
+                                    block the flagged IP and message.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/about-icon-01.png" alt=""
+                                style="height: 16px; margin-top: 17px;">
+                            <div class="text">
+                                <h6>SEAMLESS INTEGRATION</h6>
+                                <p>Easy to Integrate, Configure and Operate.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/img/about-icon-01.png" alt=""
+                                style="height: 16px; margin-top: 17px;">
+                            <div class="text">
+                                <h6>BLOCKCHAIN INTEGRATED</h6>
+                                <p>Blockchain based application has added
+                                    advantage in terms of enhanced security
+                                    and collaboration.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="services">
+        <img src="assets/img/rectangle.png" class="serviceimg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12"
+                data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <img src="assets/img/laptop.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+
+
+                <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+                    <div class="left-heading">
+                        <h5>
+                            PRODUCT
+                        </h5>
+                        <p>ANALYTICS</p>
+                    </div>
+                    <div class="left-text">
+                        <p>
+                            The application features which enables enterprises to view the entire process information
+                            which is related to analytics
+                            on a real time basis.
+                        </p>
+                        <p>
+                            With the tracking feature, Enterprise will have complete visibility of the overall as well
+                            as down to the individual MSISDN level SMS delivery related information and connected nodes
+                            in SMS journey.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="about3">
+        <div class="container">
+            <div class="left-heading">
+                <h5>
+                    PRODUCT
+                </h5>
+                <p>SUPPORT</p>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 col-sm-12 ">
+                    <div class="pdsupportBox">
+                        <img src="assets/img/group1.png">
+                        <p>
+                            24/7 <br>Network Ops <br> Center
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="pdsupportBox preporting">
+                        <img src="assets/img/group2.png">
+                        <p>
+                            PERIODIC <br>REPORTING
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="pdsupportBox amanagement">
+                        <img src="assets/img/group3.png">
+                        <p>
+                            SECURE SMS <br>ACTIVITY <br>MANAGEMENT
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section" id="about4">
+     <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/img/verticals.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text col-lg-4 col-md-12 col-sm-12 mobile-top-fix">
+                   <div class="left-heading">
+                        <h5>
+                            BUSINESS
+                        </h5>
+                        <p>VERTICALS</p>
+                    </div>
+                    <div class="left-text">
+                        <h3>
+                            <img src="assets/img/bicon.png" alt="" class="circle"> Tamper Proof SMS
+                        </h3>
+                         <p style="padding-left: 35px;">
+                            We provide the technology to send tamper proof SMS. Our technology use Blockchain, cypher
+                            tech, digital & biometric signature to ensure highest level of security.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-45">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="left-text">
+                        <h3>
+                            <img src="assets/img/bicon.png" alt="" class="circle"> TCCCPR-18 DLT Platform
+                        </h3>
+
+                        <p style="padding-left: 35px;">
+                            The Telecom DLT platform allows  telemarketer & entity to register on DLT
+                            for commercial communications in compliance with TCCCPR 2018 regulation
+                        </p>
+                    </div>
+                </div>
+                <div class=" right-text col-lg-4 col-md-12 col-sm-12 mobile-top-fix">
+                    <div class="left-text">
+                        <h3>
+                            <img src="assets/img/bicon.png" alt="" class="circle"> AI & DLT based SMSC
+                        </h3>
+
+                        <p style="padding-left: 35px;">
+                            A SMSC platform featured with Blockchain and AI technology. It is an efficient platform with added features and avoids discrepancy between parties using immutable records. </p>
+                    </div>
+                </div>
+                <div class=" right-text col-lg-4 col-md-12 col-sm-12 mobile-top-fix">
+                    <div class="left-text">
+                        <h3>
+                            <img src="assets/img/bicon.png" alt="" class="circle"> Blockchain Solutions
+                        </h3>
+
+                        <p style="padding-left: 35px;">
+                            Blockcube  offers technology solutions and consulting in Blockchain tech. through our team of specialist developers and consultants. Serving industries like Telecom, Manufacturing, Healthcare, e-Governance, Finance, Logistics, Defense and more. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div>
+                        <h5>FOR MORE INFORMATION</h5>
+                        <p>CONTACT US</p>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="contact-form">
+                        <form  [formGroup]="contactForm" (ngSubmit)="contactUs()">  
+                          <div class="row">
+                            <div class="col-md-6">
+                                <fieldset>
+                                  <label>NAME <span class="mand">*</span></label>
+                                  <input name="name" type="text" id="name" placeholder="Full Name" required="" class="contact-field" formControlName="name">
+                                </fieldset>
+                              </div>
+                              <div class="col-md-6">
+                                <fieldset>
+                                  <label>EMAIL ID <span class="mand">*</span></label>
+                                  <input name="email" type="text" id="email" placeholder="EmailId" required="" class="contact-field" formControlName="email">
+                                </fieldset>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                  <fieldset>
+                                    <label>MOBILE <span class="mand">*</span></label>
+                                    <input name="mobile" type="text" id="mobile" placeholder="Mobile" required="" class="contact-field" onkeypress="return event.charCode >= 48 && event.charCode <= 57" formControlName="mobile">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                  <fieldset>
+                                    <label>ORGANISATION NAME <span class="mand">*</span></label>
+                                    <input name="organization" type="text" id="organization" placeholder="organization" required="" class="contact-field" formControlName="organization">
+                                  </fieldset>
+                                </div>
+                            </div>
+                           
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <label>YOUR QUERY <span class="mand">*</span></label>
+                                        <textarea name="message" rows="6" id="message" placeholder="Your Message" required="" class="contact-field" formControlName="query"></textarea>
+                                    </fieldset>
+                                    </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <fieldset>
+                                  <button type="submit" id="form-submit" class="main-button">Submit</button>
+                                </fieldset>
+                              </div>
+                        </div>
+                            
+                         <!--  </div> -->
+                        </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <p class="copyright" >©2020. All rights reserved. Blockcube Technology Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<div class="modal fade" id="emailModalCenter" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="emailModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-body ">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="row  mt-2">
+                     <div class="col-md-12 col-sm-12">
+                        <p class="small modalText">{{resMessage}} successfully !!!</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12 text-center mt-2">
+                        <button type="button" name="button" class="btn bgbtn mat-raised-button" data-dismiss="modal" [ngxScrollTo]="'#welcome'">Ok</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

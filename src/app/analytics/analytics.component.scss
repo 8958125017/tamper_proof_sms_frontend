@@ -1,0 +1,24 @@
+.form-control {
+    /* background: no-repeat center bottom, center calc(100% - 1px); */
+    /* background-size: 0 100%, 100% 100%; */
+    border: solid 1px #e8e8e8;
+    height: 36px;
+    transition: background 0s ease-out;
+    padding-left: 10px;
+    padding-right: 0;
+    border-radius: 6px !important;
+    font-size: 12px;
+    border-bottom: none;
+    color: #000;
+}
+
+.search-icons{
+    position: absolute;
+    top: 9px;
+    right: 2px;
+    color: #545353;
+    font-size: 19px;
+}
+p {
+  font-family: Lato;
+}
